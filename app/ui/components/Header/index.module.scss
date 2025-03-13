@@ -4,8 +4,8 @@
 .container {
   height: 100%;
   width: 100%;
-   position: absolute; 
-   top: 5%;
+  position: absolute;
+  top: 5%;
   // background-color: #141313;
   /* border: 1px solid red; */
   z-index: 400;
@@ -142,7 +142,8 @@
 
 .menu {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+
   gap: calc(var(--base));
   font-size: 1.2rem;
   z-index: 1;
@@ -268,12 +269,10 @@
   }
 }
 
-
 .container {
   // position: relative;
 
   button {
-    
   }
 }
 
@@ -282,23 +281,24 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 100%;
+  top: 10%;
   left: 50%;
   background-color: white;
   border: 1px solid #ccc;
   z-index: 1000;
-  
+
   li {
+    display: flex;
+    flex-direction: column;
     padding: 10px 15px;
   }
-  
+
   li a {
     text-decoration: none;
     color: black;
   }
-  
+
   li:hover {
     background-color: #f0f0f0;
   }
 }
-

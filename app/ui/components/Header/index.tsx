@@ -17,12 +17,17 @@ interface Logo {
   height: number;
 }
 
+interface DropDown {
+  Links: Menu[];
+}
+
 interface HeaderProps {
   menu: Menu[];
   logo: Logo;
+  dropDown: DropDown[];
 }
 
-const Header = ({ menu, logo }: HeaderProps) => {
+const Header = ({ menu, logo, dropDown }: HeaderProps) => {
   const [isSticky, setIsSticky] = useState(false);
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -72,22 +77,25 @@ const Header = ({ menu, logo }: HeaderProps) => {
                   </li>
                 );
               })}
-            <button className={styles.buttons} onClick={toggleDropdown}>
-              Menu
-            </button>
-            {isDropdownOpen && (
-              <ul className={styles.list}>
-                <li>
-                  <a href="/link1">Link 1</a>
-                </li>
-                <li>
-                  <a href="/link2">Link 2</a>
-                </li>
-                <li>
-                  <a href="/link3">Link 3</a>
-                </li>
-              </ul>
-            )}
+              <button className={styles.buttons} onClick={toggleDropdown}>
+                Menu
+              </button>
+              {isDropdownOpen && (
+                <ul className={styles.list}>
+                  {Object.keys(dropDown).map((key, index) => {
+                    const pageIndex = Number(key);
+                    return (
+                      <li key={pageIndex}>
+                        {dropDown[pageIndex].Links.map((link, linkIndex) => (
+                          <Link key={linkIndex} href={link.path}>
+                            {link.title}
+                          </Link>
+                        ))}
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
             </ul>
           </div>
         </div>

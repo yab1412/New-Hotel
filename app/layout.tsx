@@ -52,6 +52,15 @@ export default function RootLayout({
               width: 50,
               height: 50,
             }}
+            dropDown={[
+              {
+                Links: [
+                  { title: "Profile", path: "/profile" },
+                  { title: "Settings", path: "/settings" },
+                  { title: "Logout", path: "/logout" },
+                ],
+              },
+            ]}
           />
         </header>
         {children}
