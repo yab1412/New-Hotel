@@ -25,6 +25,12 @@ interface HeaderProps {
 const Header = ({ menu, logo }: HeaderProps) => {
   const [isSticky, setIsSticky] = useState(false);
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 0);
@@ -66,6 +72,22 @@ const Header = ({ menu, logo }: HeaderProps) => {
                   </li>
                 );
               })}
+            <button className={styles.buttons} onClick={toggleDropdown}>
+              Menu
+            </button>
+            {isDropdownOpen && (
+              <ul className={styles.list}>
+                <li>
+                  <a href="/link1">Link 1</a>
+                </li>
+                <li>
+                  <a href="/link2">Link 2</a>
+                </li>
+                <li>
+                  <a href="/link3">Link 3</a>
+                </li>
+              </ul>
+            )}
             </ul>
           </div>
         </div>

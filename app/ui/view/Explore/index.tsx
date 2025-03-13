@@ -3,9 +3,8 @@
 import React, { useState, useEffect } from "react";
 import style from "./index.module.scss";
 import { Gutter } from "../../components/Gutter";
-import { Slider } from "../Slider";
 import { Icons } from "../../components/Icons";
-import Image from "next/image";
+// import Image from "next/image";
 
 
 export const Explore = () => {

@@ -3,29 +3,9 @@
 import React from "react";
 import { Gutter } from "../../components/Gutter";
 import style from "./index.module.scss";
-import { Slider } from "../../components/Slider";
 import Image from "next/image";
 import { Icons } from "../../components/Icons";
-import { Head } from "../../components/Head";
 import { Weather } from "../../components/Weather";
-
-const cardData = {
-  1: {
-    title: "Title 1",
-    description: "Description 1",
-    AuthorName: "Author 1",
-  },
-  2: {
-    title: "Title 2",
-    description: "Description 2",
-    AuthorName: "Author 2",
-  },
-  3: {
-    title: "Title 3",
-    description: "Description 3",
-    AuthorName: "Author 3",
-  },
-};
 
 export const Hero = () => {
   return (
@@ -35,8 +15,7 @@ export const Hero = () => {
         <div className={style.circle}></div>
         <div className={style.blur}></div>
         <div className={style.head}>
-          <h1>Hero</h1>
-          <Head />
+          <h1>New Hotel</h1>
           {/* <button className={style.link}>Book Now <Icons.UpRight size={40}/></button> */}
           <Weather />
         </div>
@@ -49,7 +28,7 @@ export const Hero = () => {
             <p>
               Immerse yourself in unrivaled elegance with breathtaking views and
               exceptional service. Each unique space is thoughtfully crafted to
-              provide the ultimate retreat and an experience you'll cherish
+              provide the ultimate retreat and an experience you"&apos;"ll cherish
               forever.
             </p>
             <button>

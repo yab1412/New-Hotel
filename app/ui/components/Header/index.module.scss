@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 .container {
-  height: 6rem;
+  height: 100%;
   width: 100%;
-  /* position: absolute; */
-  background-color: #141313;
+   position: absolute; 
+   top: 5%;
+  // background-color: #141313;
   /* border: 1px solid red; */
   z-index: 400;
 
@@ -266,3 +267,38 @@
     transform: translateX(0);
   }
 }
+
+
+.container {
+  // position: relative;
+
+  button {
+    
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  
+  li {
+    padding: 10px 15px;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+}
+

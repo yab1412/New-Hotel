@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
-import style from './index.module.scss'
+// import style from './index.module.scss'
 
 export default function VirtualTour() {
   const texture = useLoader(TextureLoader, "/image.jpg"); 
