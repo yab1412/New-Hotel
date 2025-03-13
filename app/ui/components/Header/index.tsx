@@ -82,7 +82,7 @@ const Header = ({ menu, logo, dropDown }: HeaderProps) => {
               </button>
               {isDropdownOpen && (
                 <ul className={styles.list}>
-                  {Object.keys(dropDown).map((key, index) => {
+                  {Object.keys(dropDown).map((key) => {
                     const pageIndex = Number(key);
                     return (
                       <li key={pageIndex}>
