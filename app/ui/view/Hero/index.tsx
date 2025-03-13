@@ -28,7 +28,7 @@ export const Hero = () => {
             <p>
               Immerse yourself in unrivaled elegance with breathtaking views and
               exceptional service. Each unique space is thoughtfully crafted to
-              provide the ultimate retreat and an experience you"&apos;"ll cherish
+              provide the ultimate retreat and an experience you&apos;ll cherish
               forever.
             </p>
             <button>
