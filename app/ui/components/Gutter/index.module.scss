@@ -1,0 +1,39 @@
+@import "../../../styles/minxins/responsive.scss";
+
+.gutter {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  /* display: flex;
+  justify-content: center;
+  border: 1px solid red; */
+  padding: 0 calc(var(--base) / 6);
+}
+
+.gutterLeft {
+  padding-left: calc(var(--base) * 2);
+
+  @include respond(phone) {
+    padding-left: calc(var(--base) * 2);
+  }
+
+  @include respond(bigScreen) {
+    padding-left: calc(var(--base) * 16);
+  }
+}
+
+.gutterRight {
+  padding-right: calc(var(--base) * 2);
+
+  @include respond(phone) {
+    padding-right: calc(var(--base) * 2);
+  }
+
+  @include respond(tab-port) {
+    padding-right: calc(var(--base) * 0.2);
+  }
+
+  @include respond(bigScreen) {
+    padding-right: calc(var(--base) * 16);
+  }
+}

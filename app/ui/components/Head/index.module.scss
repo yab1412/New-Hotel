@@ -1,0 +1,35 @@
+@import "../../../styles/minxins/responsive.scss";
+
+.container {
+  position: relative;
+
+  button {
+    
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  
+  li {
+    padding: 10px 15px;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0;
+  }
+}
+
