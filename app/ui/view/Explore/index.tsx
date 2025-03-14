@@ -79,8 +79,8 @@ export const Explore = () => {
           <h2>Explore Our Offerings</h2>
           <h1>Exquisite Amenities Await </h1>
           </div>
-          <button>
-            Discover More <Icons.UpRight size={20} />
+          <button className={style.button}>
+            Discover More <Icons.UpRight size={25} color="#2e8b92"/>
           </button>
         </div>
         <div className={style.slider}>

@@ -6,6 +6,7 @@ import { Gutter } from "../../components/Gutter";
 import Image from "next/image";
 import { Slider } from "../../components/Slider";
 import ImageShowcase from "./showCase/show";
+import { Icons } from "../../components/Icons";
 
 const about = [
   "Luxury Accommodations",
@@ -59,7 +60,7 @@ export const More = () => {
                   <div className={styles.items}>
                     <h3>{item.title}</h3>
                     <p>{item.description}</p>
-                    <button>{item.button}</button>
+                    <button className={styles.button}>{item.button} <Icons.UpRight size={30} color="#fff"/></button>
                   </div>
                 </div>
               </div>

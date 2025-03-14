@@ -1,0 +1,45 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  
+  .svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    fill: #1e1e1e;
+  }
+  
+  .preloaderHeading {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loadText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .loadText span {
+    display: inline-block;
+    transform: translateY(0);
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  

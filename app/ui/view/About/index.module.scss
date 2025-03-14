@@ -63,16 +63,25 @@
   font-weight: 400;
 }
 
+
 .button {
-  width: fit-content;
-  padding: 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: var(--primary);
-  color: #fff;
-  cursor: pointer;
   display: flex;
   align-items: center;
+  width: fit-content;
+  border: none;
+  border-radius: 2rem;
+  gap: 2rem;
+  background-color: var(--primary);
+  padding: 2rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.button :nth-child(1) {
+ background-color: #fff;
+ border-radius: 50%;
 }
 
 .slider {

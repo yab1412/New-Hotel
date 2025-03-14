@@ -31,9 +31,10 @@ export const Hero = () => {
               provide the ultimate retreat and an experience you&apos;ll cherish
               forever.
             </p>
-            <button>
-              <Icons.Call size={20} />
-              Book Your Stay Now <Icons.UpRight color={"#fff"} size={20} />
+            <button >
+                <Icons.Call size={25} />
+                Book Your Stay Now
+              <Icons.UpRight color="#fff" size={25} />
             </button>
           </div>
           <div className={style.image}>
@@ -45,8 +46,8 @@ export const Hero = () => {
                 stunning rooftop pool, designed for your relaxation and
                 enjoyment throughout your stay.
               </p>
-              <button>
-                View Our Amenities <Icons.UpRight size={20} />
+              <button className={style.button}>
+                View Our Amenities <Icons.UpRight size={25} color="#2e8b92"/>
               </button>
             </div>
           </div>

@@ -1,0 +1,69 @@
+.Container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+}
+
+.main {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 100rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0);
+  padding: 15px;
+  transition: transform 0.3s ease;
+
+  img {
+    width: 100%;
+    border-radius: 2rem;
+  }
+}
+
+.content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: space-between;
+
+  h1 {
+    // margin: 10px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+ 
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border: none;
+    border-radius: 2rem;
+    gap: 2rem;
+    background-color: var(--primary);
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.button :nth-child(1) {
+   background-color: #fff;
+   border-radius: 50%;
+}

@@ -68,7 +68,7 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <button className={styles.button}>Book your Stay <Icons.UpRight size={20}/></button>
+          <button className={styles.button}>Book your Stay <Icons.UpRight size={25} color="#2e8b92"/></button>
         </div>
         <div>
           <Slider
