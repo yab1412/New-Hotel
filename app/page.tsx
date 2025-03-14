@@ -1,4 +1,3 @@
-import { PreLoader } from "./ui/components/PreLoader";
 import { About } from "./ui/view/About";
 import { Explore } from "./ui/view/Explore";
 import { General } from "./ui/view/General";

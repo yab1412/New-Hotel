@@ -78,17 +78,16 @@
   }
 }
 
-.playButton,
-.pauseButton {
+.playButton {
   background-color: #fff;
   border: none;
   color: var(--primary);
   padding: 2rem;
   text-decoration: none;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 40%;
   transition: background-color 0.3s;
 
 }
