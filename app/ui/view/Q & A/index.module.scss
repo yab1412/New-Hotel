@@ -1,0 +1,94 @@
+@import "../../../styles/minxins/responsive.scss";
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  margin: 5rem 0;
+}
+
+.title {
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  h1 {
+    font-size: 5rem;
+    // font-weight: bold;
+
+    span {
+      color: var(--primary);
+    }
+  }
+}
+
+.content {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.blur {
+    width: 100%;
+    height: 2rem;
+    background-color: #000;
+    filter: blur(3rem);
+    z-index: 1;
+    position: absolute;
+    top: 10%;
+}
+
+.questions {
+  position: relative;
+  z-index: 2;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  border: 0.1rem solid var(--primary);
+  background-color: #fff;
+
+  h2 {
+    font-size: 2rem;
+    color: var(--text-primary);
+  }
+
+  button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+
+.answer {
+  padding: 2rem 5rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  p {
+    font-size: 2rem;
+    color: var(--text-primary);
+  }
+
+}
+
+

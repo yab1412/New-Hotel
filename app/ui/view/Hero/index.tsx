@@ -38,7 +38,7 @@ export const Hero = () => {
             </button>
           </div>
           <div className={style.image}>
-            <Image src={"/publicContain.jpg"} alt="" width={750} height={550} />
+            <img src={"/publicContain.jpg"} alt="" width={750} height={550} />
             <div className={style.discription}>
               <h2>Explore Our Luxurious Amenities</h2>
               <p>
