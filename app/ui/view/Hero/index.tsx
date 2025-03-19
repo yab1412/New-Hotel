@@ -3,7 +3,7 @@
 import React from "react";
 import { Gutter } from "../../components/Gutter";
 import style from "./index.module.scss";
-import Image from "next/image";
+// import Image from "next/image";
 import { Icons } from "../../components/Icons";
 import { Weather } from "../../components/Weather";
 
